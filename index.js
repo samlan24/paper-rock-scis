@@ -40,6 +40,13 @@ function getResults (playerSelection, computerSelection){
 }
 
 
-const playerSelection = "rock";
-const computerSelection = getComputerChoice();
-console.log(getResults(playerSelection, computerSelection));
+function game(){
+    for (let i = 0; i <= 5; i++){
+        const playerSelection =  prompt("what is your choice?");
+        const computerSelection = getComputerChoice();
+        console.log(getResults(playerSelection, computerSelection));
+    }
+}
+
+game();
+
